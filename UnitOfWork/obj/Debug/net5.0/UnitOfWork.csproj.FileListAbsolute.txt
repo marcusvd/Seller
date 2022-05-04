@@ -1,0 +1,12 @@
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\bin\Debug\net5.0\UnitOfWork.deps.json
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\bin\Debug\net5.0\UnitOfWork.dll
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\bin\Debug\net5.0\ref\UnitOfWork.dll
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\bin\Debug\net5.0\UnitOfWork.pdb
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.csprojAssemblyReference.cache
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.AssemblyInfoInputs.cache
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.AssemblyInfo.cs
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.dll
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\ref\UnitOfWork.dll
+C:\Users\marcus\Desktop\AppGit\CSharpAngular\MyWallet\UnitOfWork\obj\Debug\net5.0\UnitOfWork.pdb
