@@ -48,6 +48,8 @@ namespace Api
             services.AddDbContext<MwDbContext>(mySql => mySql.UseMySql(ConnectStr, ServerVersion.AutoDetect(ConnectStr)));
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IClientServices, ClientServices>();
+            services.AddScoped<IProductServices, ProductServices>();
+            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IWorker, Worker>();
         }
 

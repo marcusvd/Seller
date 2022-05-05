@@ -8,10 +8,10 @@ using Services.Dto;
 
 namespace Services.Contracts
 {
-    public interface IClientServices
+    public interface IProductServices
     {
-        Task<ClientDto> InsertAsync(ClientDto record);
-        Task<List<ClientDto>> LoadAllAsync();
+        Task<ProductDto> InsertAsync(ProductDto record);
+        Task<List<ProductDto>> LoadAllAsync();
 
 
     }

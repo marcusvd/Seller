@@ -11,6 +11,7 @@ namespace UnitOWork.Contracts
     public interface IWorker
     {
         IClientRepository _CLIENTS_REPO { get; }
+        IProductRepository _PRODUCTS_REPO { get; }
         Task<bool> SaveAsync();
 
 

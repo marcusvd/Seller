@@ -14,6 +14,7 @@ namespace UnitOWork.Operations
     public class Worker : IWorker
     {
         private ClientRepository _CLIENT_REPO;
+        private ProductRepository _PRODUCT_REPO;
         private readonly MwDbContext _CONTEXT;
         public Worker(MwDbContext CONTEXT)
         {
@@ -25,6 +26,13 @@ namespace UnitOWork.Operations
             get
             {
                 return _CLIENT_REPO = _CLIENT_REPO ?? new ClientRepository(_CONTEXT);
+            }
+        }
+        public IProductRepository _PRODUCTS_REPO
+        {
+            get
+            {
+                return _PRODUCT_REPO = _PRODUCT_REPO ?? new ProductRepository(_CONTEXT);
             }
         }
 

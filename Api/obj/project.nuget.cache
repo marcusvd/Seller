@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5o635ztAdkIXnEGECX4FGi4q5FNzmbAD+pzze2069U4nRRtHSR8ecE71V3UAo9wTAyXqDGkQVmg0lw62/HA/HQ==",
+  "dgSpecHash": "J/+pcDzB0rpO98MoxhyYqf7HpoVkvFKGfTqhcAvxJXghFn852nEYXQQiYT4TNISk2wtK24IPfiBA4zi5IJvyRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj",
+  "projectFilePath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marcus\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\marcus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

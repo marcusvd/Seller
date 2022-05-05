@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj": {}
+    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj": {
+    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj",
+        "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj",
         "packagesPath": "C:\\Users\\marcus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\obj\\",
+        "outputPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

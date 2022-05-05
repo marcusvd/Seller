@@ -9,7 +9,7 @@ using Services.Operations;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("api/{controller}")]
+    [Route("cli/{controller}")]
     public class ClientsController : ControllerBase
     {
         private readonly IClientServices _Client;
@@ -19,7 +19,7 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync([FromBody]ClientDto ClientView)
+        public async Task<IActionResult> CreateAsync([FromBody] ClientDto ClientView)
         {
             try
             {
@@ -35,7 +35,25 @@ namespace Api.Controllers
             }
 
         }
-        
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync()
+        {
+
+            try
+            {
+                var cli = await _Client.LoadAllAsync();
+
+                if (cli == null) return NoContent();
+
+                return Ok(cli);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"{ex.Message}");
+            }
+
+        }
 
     }
 }

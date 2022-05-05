@@ -13,6 +13,7 @@ namespace Services.Dto.ProfileMapping
             CreateMap<Client, ClientDto>().ReverseMap();
             CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<Contact, ContactDto>().ReverseMap();
+            CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<SocialNetwork, SocialNetworkDto>().ReverseMap();
         }
 

@@ -6,7 +6,7 @@ namespace Domain.Entities
         public string Name { get; set; }
         public int IM { get; set; }
         public int IE { get; set; }
-        public int CNPJ { get; set; }
+        public string CNPJ { get; set; }
         public Address Address {get; set;}
         public Contact Contact {get; set;}
     }

@@ -14,12 +14,12 @@ using UnitOWork.Operations;
 namespace Services.Operations
 {
 
-    public class ClientServices : IClientServices
+    public class ProductServices : IProductServices
     {
 
         private readonly IWorker _CONTEXT;
         private readonly IMapper _MAP;
-        public ClientServices(
+        public ProductServices(
             IWorker CONTEXT,
             IMapper MAP
             )
@@ -28,7 +28,7 @@ namespace Services.Operations
             _MAP = MAP;
         }
 
-        public async Task<ClientDto> InsertAsync(ClientDto record)
+        public async Task<ProductDto> InsertAsync(ProductDto record)
         {
             try
             {
@@ -36,11 +36,11 @@ namespace Services.Operations
 
                 //var fromView = record;
 
-                Client toDb = _MAP.Map<Client>(record);
+                Product toDb = _MAP.Map<Product>(record);
 
-                _CONTEXT._CLIENTS_REPO.AddRepAsync(toDb);
+                _CONTEXT._PRODUCTS_REPO.AddRepAsync(toDb);
 
-                // var ReturnToView = _MAP.Map<ClientDto>(toDb);
+                // var ReturnToView = _MAP.Map<ProductDto>(toDb);
                 if (await _CONTEXT.SaveAsync())
                 {
                     return null;
@@ -56,15 +56,15 @@ namespace Services.Operations
             }
         }
 
-       public async Task<List<ClientDto>> LoadAllAsync()
+        public async Task<List<ProductDto>> LoadAllAsync()
         {
             try
             {
-                List<Client> FromDb = await _CONTEXT._CLIENTS_REPO.GetAllRepAsync();
+                List<Product> FromDb = await _CONTEXT._PRODUCTS_REPO.GetAllRepAsync();
 
                 if (FromDb == null) return null;
 
-                List<ClientDto> ToView = _MAP.Map<List<ClientDto>>(FromDb);
+                List<ProductDto> ToView = _MAP.Map<List<ProductDto>>(FromDb);
 
                 return ToView;
             }
@@ -74,5 +74,9 @@ namespace Services.Operations
             }
         }
 
+        // public async Task<List<ProductDto>> LoadAllAsync()
+        // {
+        //     throw new await NotImplementedException();
+        // }
     }
 }
