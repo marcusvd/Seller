@@ -1,12 +1,41 @@
+using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Services.Contracts;
+using Services.Dto;
+using Services.Operations;
 
 namespace Api.Controllers
 {
+    [ApiController]
+    [Route("api/{controller}")]
     public class ClientsController : ControllerBase
     {
-        public ClientsController()
+        private readonly IClientServices _Client;
+        public ClientsController(IClientServices ClientCli)
         {
+            _Client = ClientCli;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateAsync([FromBody]ClientDto ClientView)
+        {
+            try
+            {
+                if (ClientView == null) return NoContent();
+
+                var cli = await _Client.InsertAsync(ClientView);
+
+                return Ok(cli);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"{ex.Message}");
+            }
 
         }
+        
+
     }
 }

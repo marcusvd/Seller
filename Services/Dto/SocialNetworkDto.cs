@@ -1,6 +1,6 @@
 namespace Services.Dto
 {
-    public class SocialNetwork
+    public class SocialNetworkDto
     {
         public int Id {get; set;}
         public string Name {get; set;}

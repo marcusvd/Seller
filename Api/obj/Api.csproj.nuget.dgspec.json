@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj": {}
+    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj": {
+    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\Api.csproj",
+        "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\Api.csproj",
         "packagesPath": "C:\\Users\\marcus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\api\\obj\\",
+        "outputPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,6 +31,9 @@
             "projectReferences": {
               "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Repository\\Repository.csproj": {
                 "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Services\\Services.csproj"
               }
             }
           }
@@ -45,6 +48,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.16, )"
@@ -197,6 +204,136 @@
               "version": "[5.0.4, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\marcus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marcus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\UnitOfWork\\UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\UnitOfWork\\UnitOfWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\UnitOfWork\\UnitOfWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\UnitOfWork\\UnitOfWork.csproj",
+        "projectName": "UnitOfWork",
+        "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\UnitOfWork\\UnitOfWork.csproj",
+        "packagesPath": "C:\\Users\\marcus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\UnitOfWork\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marcus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\marcus\\Desktop\\AppGit\\CSharpAngular\\MyWallet\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
